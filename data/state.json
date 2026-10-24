@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "cash": 1000.0,
+  "provider": null,
+  "positions": {
+    "BTCUSDT": null,
+    "ETHUSDT": null
+  },
+  "last_minute": {
+    "BTCUSDT": null,
+    "ETHUSDT": null
+  },
+  "last_hour": {
+    "BTCUSDT": null,
+    "ETHUSDT": null
+  },
+  "trades": [],
+  "events": [],
+  "equity_history": [],
+  "last_checked": "2026-10-24T18:36:22+00:00",
+  "last_success": null,
+  "last_error": "MarketError: No provider reachable; binance: Network/API error: HTTP Error 451:  | bybit: Network/API error: HTTP Error 403: Forbidden",
+  "status": "ERROR",
+  "checks": 0,
+  "last_prices": {},
+  "warnings": [
+    "Market feed or validation failed; trading paused, previous state preserved"
+  ]
+}
