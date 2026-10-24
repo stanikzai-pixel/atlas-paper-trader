@@ -1,0 +1,101 @@
+
+name: Atlas Paper Trader
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'First select smoke, then run'
+        type: choice
+        options: [smoke, run]
+        default: smoke
+  schedule:
+    - cron: '7,22,37,52 * * * *'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+  actions: read
+
+concurrency:
+  group: atlas-paper-trader
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    environment: github-pages
+    env:
+      RUN_MODE: ${{ (github.event_name == 'schedule' && vars.ATLAS_ENABLED == 'true') && 'run' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'run') && 'run' || 'smoke' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Extract project from ZIP
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path, PurePosixPath
+          from zipfile import ZipFile
+          zpath = Path('Atlas_Paper_Trader_GitHub_Android_V1.zip')
+          if not zpath.is_file():
+              raise SystemExit('ZIP not found in repository root')
+          with ZipFile(zpath) as z:
+              for item in z.infolist():
+                  if item.is_dir():
+                      continue
+                  p = PurePosixPath(item.filename)
+                  if p.is_absolute() or '..' in p.parts:
+                      raise SystemExit('Unsafe ZIP member: ' + item.filename)
+                  if not p.parts or p.parts[0] == '.github':
+                      continue
+                  out = Path(*p.parts)
+                  out.parent.mkdir(parents=True, exist_ok=True)
+                  out.write_bytes(z.read(item))
+          for required in ('main.py', 'src/engine.py', 'src/strategy.py',
+                           'src/market.py', 'site/index.html', 'tests/test_engine.py',
+                           'tests/test_market.py'):
+              if not Path(required).is_file():
+                  raise SystemExit('Missing required file: ' + required)
+          print('Package checked and extracted')
+          PY
+
+      - name: Verify Python and run tests
+        run: |
+          python -m compileall -q main.py src
+          python -m unittest discover -s tests -v
+
+      - name: Run demo or smoke test
+        run: python main.py "$RUN_MODE"
+
+      - name: Save virtual account
+        if: env.RUN_MODE == 'run'
+        run: |
+          test -s data/state.json
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/state.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Save virtual trading state [skip ci]'
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
+
+      - name: Verify dashboard
+        if: env.RUN_MODE == 'run'
+        run: |
+          test -s site/index.html
+          python -m json.tool site/data.json >/dev/null
+
+      - name: Upload dashboard
+        if: env.RUN_MODE == 'run'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+
+      - name: Publish dashboard
+        if: env.RUN_MODE == 'run'
+        uses: actions/deploy-pages@v4
