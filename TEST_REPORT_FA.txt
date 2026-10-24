@@ -1,0 +1,15 @@
+Atlas Paper Trader — Quality checks (2026-10-24)
+
+PASS: 16 offline unit tests (price feed parser, missing hours, feature timing,
+      no lookahead for prior bars, RSI/HARSI, initial boot, duplicate prevention,
+      stop-loss, partial position, account persistence, network fail-closed,
+      provider pinning, position size and capital cap).
+PASS: Manual smoke command: python main.py smoke.
+PASS: GitHub Actions YAML parsed and expected workflow_dispatch/schedule found.
+PASS: Dashboard JavaScript passed node --check.
+PASS: Static dashboard JSON parsed correctly.
+NOT VERIFIED: live API calls from GitHub-hosted runner and first real Pages deployment.
+            Container cannot access Binance/Bybit public API. The program fails
+            visibly and enters ERROR status rather than faking fills if unavailable.
+NO real orders, no user account API or password.
+Scheduled workflows are best-effort, not 24/7 uptime guarantees.
