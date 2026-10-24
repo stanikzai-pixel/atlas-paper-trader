@@ -41,7 +41,7 @@ jobs:
           python - <<'PY'
           from pathlib import Path, PurePosixPath
           from zipfile import ZipFile
-          zpath = Path('Atlas_Paper_Trader_GitHub_Android_V1.zip')
+          zpath = Path('Atlas_Paper_Trader_GitHub_Android_V2.zip')
           if not zpath.is_file():
               raise SystemExit('ZIP not found in repository root')
           with ZipFile(zpath) as z:
