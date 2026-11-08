@@ -18,19 +18,19 @@
       "entry_fee": 0.10021242914858723,
       "exit_fees": 0.0,
       "gross": 0.0,
-      "bars": 52,
+      "bars": 53,
       "armed": false,
       "warning_hour": null,
       "partial_done": false
     }
   },
   "last_minute": {
-    "BTCUSDT": 1794115500000,
-    "ETHUSDT": 1794115500000
+    "BTCUSDT": 1794119100000,
+    "ETHUSDT": 1794119100000
   },
   "last_hour": {
-    "BTCUSDT": 1794114000000,
-    "ETHUSDT": 1794114000000
+    "BTCUSDT": 1794117600000,
+    "ETHUSDT": 1794117600000
   },
   "trades": [
     {
@@ -1748,16 +1748,20 @@
     {
       "utc": "2026-11-08T05:26:10+00:00",
       "equity": 1003.395612
+    },
+    {
+      "utc": "2026-11-08T06:26:10+00:00",
+      "equity": 1003.55535
     }
   ],
-  "last_checked": "2026-11-08T05:26:10+00:00",
-  "last_success": "2026-11-08T05:26:10+00:00",
+  "last_checked": "2026-11-08T06:26:10+00:00",
+  "last_success": "2026-11-08T06:26:10+00:00",
   "last_error": null,
   "status": "LIVE",
-  "checks": 411,
+  "checks": 412,
   "last_prices": {
-    "BTCUSDT": 75839.0,
-    "ETHUSDT": 2236.52
+    "BTCUSDT": 75807.8,
+    "ETHUSDT": 2234.74
   },
   "warnings": []
 }
