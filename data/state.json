@@ -18,19 +18,19 @@
       "entry_fee": 0.10021242914858723,
       "exit_fees": 0.0,
       "gross": 0.0,
-      "bars": 103,
+      "bars": 104,
       "armed": true,
       "warning_hour": null,
       "partial_done": false
     }
   },
   "last_minute": {
-    "BTCUSDT": 1794310560000,
-    "ETHUSDT": 1794310560000
+    "BTCUSDT": 1794314340000,
+    "ETHUSDT": 1794314340000
   },
   "last_hour": {
-    "BTCUSDT": 1794308400000,
-    "ETHUSDT": 1794308400000
+    "BTCUSDT": 1794312000000,
+    "ETHUSDT": 1794312000000
   },
   "trades": [
     {
@@ -1998,19 +1998,23 @@
     {
       "utc": "2026-11-10T11:38:07+00:00",
       "equity": 1016.293077
+    },
+    {
+      "utc": "2026-11-10T12:40:42+00:00",
+      "equity": 1016.84139
     }
   ],
-  "last_checked": "2026-11-10T11:38:07+00:00",
-  "last_success": "2026-11-10T11:38:07+00:00",
+  "last_checked": "2026-11-10T12:40:42+00:00",
+  "last_success": "2026-11-10T12:40:42+00:00",
   "last_error": null,
   "status": "WARNING",
-  "checks": 469,
+  "checks": 470,
   "last_prices": {
-    "BTCUSDT": 74258.4,
-    "ETHUSDT": 2092.8
+    "BTCUSDT": 74189.9,
+    "ETHUSDT": 2086.69
   },
   "warnings": [
-    "BTCUSDT: signal too old (38 minutes); skipped entry",
-    "ETHUSDT: signal too old (38 minutes); skipped entry"
+    "BTCUSDT: signal too old (41 minutes); skipped entry",
+    "ETHUSDT: signal too old (41 minutes); skipped entry"
   ]
 }
