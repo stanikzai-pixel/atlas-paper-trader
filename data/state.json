@@ -1,36 +1,18 @@
 {
   "version": 1,
-  "cash": 1003.6765598034603,
+  "cash": 1015.7625536901626,
   "provider": "gate",
   "positions": {
     "BTCUSDT": null,
-    "ETHUSDT": {
-      "side": -1,
-      "entry": 2234.95292,
-      "entry_utc": "2026-11-05T22:24:58+00:00",
-      "entry_ms": 1793917498572,
-      "stop": 2098.71176992536,
-      "initial_stop": 2287.75298356331,
-      "risk_dist": 52.800063563309905,
-      "risk_budget": 5.018883861163045,
-      "qty": 0.08967744085507379,
-      "entry_qty": 0.08967744085507379,
-      "entry_fee": 0.10021242914858723,
-      "exit_fees": 0.0,
-      "gross": 0.0,
-      "bars": 130,
-      "armed": true,
-      "warning_hour": null,
-      "partial_done": false
-    }
+    "ETHUSDT": null
   },
   "last_minute": {
-    "BTCUSDT": 1794414540000,
-    "ETHUSDT": 1794414540000
+    "BTCUSDT": 1794418320000,
+    "ETHUSDT": 1794418320000
   },
   "last_hour": {
-    "BTCUSDT": 1794412800000,
-    "ETHUSDT": 1794412800000
+    "BTCUSDT": 1794416400000,
+    "ETHUSDT": 1794416400000
   },
   "trades": [
     {
@@ -46,6 +28,20 @@
       "fees_usdt": 0.29478926,
       "partial_exit": true,
       "risk_usdt": 5.0
+    },
+    {
+      "symbol": "ETHUSDT",
+      "side": "SHORT",
+      "entry_utc": "2026-11-05T22:24:58+00:00",
+      "exit_utc": "2026-11-11T17:23:00+00:00",
+      "entry_price": 2234.95292,
+      "exit_price": 2099.131512279345,
+      "entry_qty": 0.08967744085507379,
+      "net_usdt": 11.98578146,
+      "reason": "STOP_1m_estimate",
+      "fees_usdt": 0.1943348,
+      "partial_exit": false,
+      "risk_usdt": 5.018883861163045
     }
   ],
   "events": [
@@ -132,6 +128,12 @@
       "kind": "HARSI_WARNING",
       "symbol": "ETHUSDT",
       "detail": "Waiting for opposite price structure break within 4 candles"
+    },
+    {
+      "time": "2026-11-11T17:23:00+00:00",
+      "kind": "CLOSE",
+      "symbol": "ETHUSDT",
+      "detail": "STOP_1m_estimate; PnL +11.9858 USDT"
     }
   ],
   "equity_history": [
@@ -2126,16 +2128,20 @@
     {
       "utc": "2026-11-11T16:30:18+00:00",
       "equity": 1017.465085
+    },
+    {
+      "utc": "2026-11-11T17:33:42+00:00",
+      "equity": 1015.762554
     }
   ],
-  "last_checked": "2026-11-11T16:30:18+00:00",
-  "last_success": "2026-11-11T16:30:18+00:00",
+  "last_checked": "2026-11-11T17:33:42+00:00",
+  "last_success": "2026-11-11T17:33:42+00:00",
   "last_error": null,
   "status": "LIVE",
-  "checks": 498,
+  "checks": 499,
   "last_prices": {
-    "BTCUSDT": 74279.5,
-    "ETHUSDT": 2079.74
+    "BTCUSDT": 74357.1,
+    "ETHUSDT": 2088.02
   },
   "warnings": []
 }
