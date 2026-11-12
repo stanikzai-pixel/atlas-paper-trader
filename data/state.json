@@ -1,18 +1,54 @@
 {
   "version": 1,
-  "cash": 1015.7625536901626,
+  "cash": 1015.4102805465144,
   "provider": "gate",
   "positions": {
-    "BTCUSDT": null,
-    "ETHUSDT": null
+    "BTCUSDT": {
+      "side": -1,
+      "entry": 72907.41560000001,
+      "entry_utc": "2026-11-12T12:32:26+00:00",
+      "entry_ms": 1794486746849,
+      "stop": 73719.95076053737,
+      "initial_stop": 73719.95076053737,
+      "risk_dist": 812.5351605373554,
+      "risk_budget": 5.078812768450813,
+      "qty": 0.005549557799170405,
+      "entry_qty": 0.005549557799170405,
+      "entry_fee": 0.20230195843016907,
+      "exit_fees": 0.0,
+      "gross": 0.0,
+      "bars": 0,
+      "armed": false,
+      "warning_hour": null,
+      "partial_done": false
+    },
+    "ETHUSDT": {
+      "side": -1,
+      "entry": 2022.39544,
+      "entry_utc": "2026-11-12T12:32:26+00:00",
+      "entry_ms": 1794486746849,
+      "stop": 2053.767496434802,
+      "initial_stop": 2053.767496434802,
+      "risk_dist": 31.372056434802147,
+      "risk_budget": 5.075979974473996,
+      "qty": 0.14831044636643573,
+      "entry_qty": 0.14831044636643573,
+      "entry_fee": 0.14997118521792208,
+      "exit_fees": 0.0,
+      "gross": 0.0,
+      "bars": 0,
+      "armed": false,
+      "warning_hour": null,
+      "partial_done": false
+    }
   },
   "last_minute": {
-    "BTCUSDT": 1794482940000,
-    "ETHUSDT": 1794482940000
+    "BTCUSDT": 1794486660000,
+    "ETHUSDT": 1794486660000
   },
   "last_hour": {
-    "BTCUSDT": 1794481200000,
-    "ETHUSDT": 1794481200000
+    "BTCUSDT": 1794484800000,
+    "ETHUSDT": 1794484800000
   },
   "trades": [
     {
@@ -134,13 +170,21 @@
       "kind": "CLOSE",
       "symbol": "ETHUSDT",
       "detail": "STOP_1m_estimate; PnL +11.9858 USDT"
+    },
+    {
+      "time": "2026-11-12T12:32:26+00:00",
+      "kind": "OPEN",
+      "symbol": "BTCUSDT",
+      "detail": "SHORT 0.0055496 @ 72907.42, SL 73719.95"
+    },
+    {
+      "time": "2026-11-12T12:32:26+00:00",
+      "kind": "OPEN",
+      "symbol": "ETHUSDT",
+      "detail": "SHORT 0.1483104 @ 2022.40, SL 2053.77"
     }
   ],
   "equity_history": [
-    {
-      "utc": "2026-10-25T03:14:58+00:00",
-      "equity": 1000.0
-    },
     {
       "utc": "2026-10-25T03:56:22+00:00",
       "equity": 1000.0
@@ -2136,16 +2180,20 @@
     {
       "utc": "2026-11-12T11:30:29+00:00",
       "equity": 1015.762554
+    },
+    {
+      "utc": "2026-11-12T12:32:26+00:00",
+      "equity": 1014.775992
     }
   ],
-  "last_checked": "2026-11-12T11:30:29+00:00",
-  "last_success": "2026-11-12T11:30:29+00:00",
+  "last_checked": "2026-11-12T12:32:26+00:00",
+  "last_success": "2026-11-12T12:32:26+00:00",
   "last_error": null,
   "status": "LIVE",
-  "checks": 515,
+  "checks": 516,
   "last_prices": {
-    "BTCUSDT": 73243.6,
-    "ETHUSDT": 2037.7
+    "BTCUSDT": 72922.0,
+    "ETHUSDT": 2022.8
   },
   "warnings": []
 }
