@@ -17,9 +17,9 @@
       "entry_fee": 0.20230195843016907,
       "exit_fees": 0.0,
       "gross": 0.0,
-      "bars": 22,
+      "bars": 23,
       "armed": true,
-      "warning_hour": 1794556800000,
+      "warning_hour": null,
       "partial_done": false
     },
     "ETHUSDT": {
@@ -36,19 +36,19 @@
       "entry_fee": 0.14997118521792208,
       "exit_fees": 0.07237513891554043,
       "gross": 5.220907386841245,
-      "bars": 22,
+      "bars": 23,
       "armed": true,
       "warning_hour": 1794556800000,
       "partial_done": true
     }
   },
   "last_minute": {
-    "BTCUSDT": 1794570960000,
-    "ETHUSDT": 1794570960000
+    "BTCUSDT": 1794575220000,
+    "ETHUSDT": 1794575220000
   },
   "last_hour": {
-    "BTCUSDT": 1794567600000,
-    "ETHUSDT": 1794567600000
+    "BTCUSDT": 1794574800000,
+    "ETHUSDT": 1794574800000
   },
   "trades": [
     {
@@ -209,10 +209,6 @@
     }
   ],
   "equity_history": [
-    {
-      "utc": "2026-10-25T17:13:21+00:00",
-      "equity": 1000.0
-    },
     {
       "utc": "2026-10-25T17:48:08+00:00",
       "equity": 1000.0
@@ -2208,16 +2204,23 @@
     {
       "utc": "2026-11-13T11:57:38+00:00",
       "equity": 1045.150037
+    },
+    {
+      "utc": "2026-11-13T13:08:43+00:00",
+      "equity": 1045.708796
     }
   ],
-  "last_checked": "2026-11-13T11:57:38+00:00",
-  "last_success": "2026-11-13T11:57:38+00:00",
+  "last_checked": "2026-11-13T13:08:43+00:00",
+  "last_success": "2026-11-13T13:08:43+00:00",
   "last_error": null,
-  "status": "LIVE",
-  "checks": 539,
+  "status": "WARNING",
+  "checks": 540,
   "last_prices": {
-    "BTCUSDT": 69281.9,
-    "ETHUSDT": 1957.1
+    "BTCUSDT": 69188.1,
+    "ETHUSDT": 1956.59
   },
-  "warnings": []
+  "warnings": [
+    "BTCUSDT: missed 1 hourly close(s); skipped stale signals",
+    "ETHUSDT: missed 1 hourly close(s); skipped stale signals"
+  ]
 }
