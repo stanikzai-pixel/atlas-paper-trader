@@ -17,7 +17,7 @@
       "entry_fee": 0.13799864929325098,
       "exit_fees": 0.0,
       "gross": 0.0,
-      "bars": 5,
+      "bars": 6,
       "armed": false,
       "warning_hour": null,
       "partial_done": false
@@ -27,7 +27,7 @@
       "entry": 1837.68239,
       "entry_utc": "2026-11-14T15:23:50+00:00",
       "entry_ms": 1794669830347,
-      "stop": 1879.8596939263648,
+      "stop": 1863.746262848238,
       "initial_stop": 1879.8596939263648,
       "risk_dist": 42.17730392636487,
       "risk_budget": 5.1911415967778565,
@@ -36,19 +36,19 @@
       "entry_fee": 0.10651806889706958,
       "exit_fees": 0.0,
       "gross": 0.0,
-      "bars": 5,
-      "armed": false,
+      "bars": 6,
+      "armed": true,
       "warning_hour": null,
       "partial_done": false
     }
   },
   "last_minute": {
-    "BTCUSDT": 1794688800000,
-    "ETHUSDT": 1794688800000
+    "BTCUSDT": 1794691260000,
+    "ETHUSDT": 1794691260000
   },
   "last_hour": {
-    "BTCUSDT": 1794686400000,
-    "ETHUSDT": 1794686400000
+    "BTCUSDT": 1794690000000,
+    "ETHUSDT": 1794690000000
   },
   "trades": [
     {
@@ -261,10 +261,6 @@
     }
   ],
   "equity_history": [
-    {
-      "utc": "2026-10-26T20:38:08+00:00",
-      "equity": 1000.0
-    },
     {
       "utc": "2026-10-26T21:18:37+00:00",
       "equity": 1000.0
@@ -2260,19 +2256,20 @@
     {
       "utc": "2026-11-14T20:41:31+00:00",
       "equity": 1039.216169
+    },
+    {
+      "utc": "2026-11-14T21:22:58+00:00",
+      "equity": 1049.120933
     }
   ],
-  "last_checked": "2026-11-14T20:41:31+00:00",
-  "last_success": "2026-11-14T20:41:31+00:00",
+  "last_checked": "2026-11-14T21:22:58+00:00",
+  "last_success": "2026-11-14T21:22:58+00:00",
   "last_error": null,
-  "status": "WARNING",
-  "checks": 575,
+  "status": "LIVE",
+  "checks": 576,
   "last_prices": {
-    "BTCUSDT": 65486.6,
-    "ETHUSDT": 1823.19
+    "BTCUSDT": 64456.4,
+    "ETHUSDT": 1775.33
   },
-  "warnings": [
-    "BTCUSDT: signal too old (42 minutes); skipped entry",
-    "ETHUSDT: signal too old (42 minutes); skipped entry"
-  ]
+  "warnings": []
 }
