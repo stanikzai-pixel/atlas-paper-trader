@@ -17,7 +17,7 @@
       "entry_fee": 0.12122339246709646,
       "exit_fees": 0.0,
       "gross": 0.0,
-      "bars": 21,
+      "bars": 22,
       "armed": true,
       "warning_hour": 1795212000000,
       "partial_done": false
@@ -36,19 +36,19 @@
       "entry_fee": 0.10530173741313277,
       "exit_fees": 0.0,
       "gross": 0.0,
-      "bars": 21,
+      "bars": 22,
       "armed": true,
-      "warning_hour": null,
+      "warning_hour": 1795215600000,
       "partial_done": false
     }
   },
   "last_minute": {
-    "BTCUSDT": 1795214100000,
-    "ETHUSDT": 1795214100000
+    "BTCUSDT": 1795217160000,
+    "ETHUSDT": 1795217160000
   },
   "last_hour": {
-    "BTCUSDT": 1795212000000,
-    "ETHUSDT": 1795212000000
+    "BTCUSDT": 1795215600000,
+    "ETHUSDT": 1795215600000
   },
   "trades": [
     {
@@ -316,13 +316,15 @@
       "kind": "HARSI_WARNING",
       "symbol": "BTCUSDT",
       "detail": "Waiting for opposite price structure break within 4 candles"
+    },
+    {
+      "time": "2026-11-20T23:27:39+00:00",
+      "kind": "HARSI_WARNING",
+      "symbol": "ETHUSDT",
+      "detail": "Waiting for opposite price structure break within 4 candles"
     }
   ],
   "equity_history": [
-    {
-      "utc": "2026-10-31T14:17:13+00:00",
-      "equity": 1005.425611
-    },
     {
       "utc": "2026-10-31T14:55:24+00:00",
       "equity": 1005.356187
@@ -2318,19 +2320,20 @@
     {
       "utc": "2026-11-20T22:36:50+00:00",
       "equity": 1067.787771
+    },
+    {
+      "utc": "2026-11-20T23:27:39+00:00",
+      "equity": 1068.353893
     }
   ],
-  "last_checked": "2026-11-20T22:36:50+00:00",
-  "last_success": "2026-11-20T22:36:50+00:00",
+  "last_checked": "2026-11-20T23:27:39+00:00",
+  "last_success": "2026-11-20T23:27:39+00:00",
   "last_error": null,
-  "status": "WARNING",
-  "checks": 712,
+  "status": "LIVE",
+  "checks": 713,
   "last_prices": {
-    "BTCUSDT": 59055.4,
-    "ETHUSDT": 1621.34
+    "BTCUSDT": 58978.3,
+    "ETHUSDT": 1619.14
   },
-  "warnings": [
-    "BTCUSDT: signal too old (37 minutes); skipped entry",
-    "ETHUSDT: signal too old (37 minutes); skipped entry"
-  ]
+  "warnings": []
 }
