@@ -17,9 +17,9 @@
       "entry_fee": 0.12122339246709646,
       "exit_fees": 0.0,
       "gross": 0.0,
-      "bars": 20,
+      "bars": 21,
       "armed": true,
-      "warning_hour": null,
+      "warning_hour": 1795212000000,
       "partial_done": false
     },
     "ETHUSDT": {
@@ -36,19 +36,19 @@
       "entry_fee": 0.10530173741313277,
       "exit_fees": 0.0,
       "gross": 0.0,
-      "bars": 20,
+      "bars": 21,
       "armed": true,
       "warning_hour": null,
       "partial_done": false
     }
   },
   "last_minute": {
-    "BTCUSDT": 1795211400000,
-    "ETHUSDT": 1795211400000
+    "BTCUSDT": 1795214100000,
+    "ETHUSDT": 1795214100000
   },
   "last_hour": {
-    "BTCUSDT": 1795208400000,
-    "ETHUSDT": 1795208400000
+    "BTCUSDT": 1795212000000,
+    "ETHUSDT": 1795212000000
   },
   "trades": [
     {
@@ -310,13 +310,15 @@
       "kind": "OPEN",
       "symbol": "ETHUSDT",
       "detail": "SHORT 0.1200650 @ 1754.08, SL 1794.93"
+    },
+    {
+      "time": "2026-11-20T22:36:50+00:00",
+      "kind": "HARSI_WARNING",
+      "symbol": "BTCUSDT",
+      "detail": "Waiting for opposite price structure break within 4 candles"
     }
   ],
   "equity_history": [
-    {
-      "utc": "2026-10-31T13:34:45+00:00",
-      "equity": 1005.463428
-    },
     {
       "utc": "2026-10-31T14:17:13+00:00",
       "equity": 1005.425611
@@ -2312,19 +2314,23 @@
     {
       "utc": "2026-11-20T21:51:38+00:00",
       "equity": 1068.420813
+    },
+    {
+      "utc": "2026-11-20T22:36:50+00:00",
+      "equity": 1067.787771
     }
   ],
-  "last_checked": "2026-11-20T21:51:38+00:00",
-  "last_success": "2026-11-20T21:51:38+00:00",
+  "last_checked": "2026-11-20T22:36:50+00:00",
+  "last_success": "2026-11-20T22:36:50+00:00",
   "last_error": null,
   "status": "WARNING",
-  "checks": 711,
+  "checks": 712,
   "last_prices": {
-    "BTCUSDT": 59000.8,
-    "ETHUSDT": 1617.85
+    "BTCUSDT": 59055.4,
+    "ETHUSDT": 1621.34
   },
   "warnings": [
-    "BTCUSDT: signal too old (52 minutes); skipped entry",
-    "ETHUSDT: signal too old (52 minutes); skipped entry"
+    "BTCUSDT: signal too old (37 minutes); skipped entry",
+    "ETHUSDT: signal too old (37 minutes); skipped entry"
   ]
 }
